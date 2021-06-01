@@ -4,5 +4,22 @@ import ListContainer from '../../containers/ListContainer';
 import Header from '../../containers/Header';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  const [theme, setTheme] = useState('space');
+
+  handleThemeChange = (e) => {
+    setTheme((theme) => e.target.value);
+  };
+
+  return (
+    <>
+      <Header />
+      <h1>Hello World</h1>
+      <Router>
+        <Route exact path="/" component={ListContainer} />
+      </Router>
+    </>
+  );
 }
+
+
+
