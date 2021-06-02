@@ -39,6 +39,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        loader: 'file-loader',
+      },
+      {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {

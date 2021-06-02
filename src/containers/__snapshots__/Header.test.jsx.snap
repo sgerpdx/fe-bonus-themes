@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`header container component displays a heading and a drop-down selection menu 1`] = `
+<h4>
+  Use the menu below to select a visual theme:
+</h4>
+`;
