@@ -1,0 +1,50 @@
+[
+  {
+    "id": "6",
+    "name": "Nurse Chapel",
+    "affiliation": "Starfleet Command",
+    "origin": "Earth",
+    "race": "Human",
+    "imageUrl": "https://i.pinimg.com/originals/00/d2/82/00d28238c7562fca8da69503a254539c.jpg"
+  },
+  {
+    "id": "8",
+    "name": "Scotty",
+    "affiliation": "Starfleet Command",
+    "origin": "Earth / Scotland",
+    "race": "Human",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQMC4XER68IBRWXNe0YdRO5UoSmoLDf3FwQ9g&usqp=CAU"
+  },
+  {
+    "id": "10",
+    "name": "Yeoman Janice Rand",
+    "affiliation": "Starfleet",
+    "origin": "Earth",
+    "race": "Human",
+    "imageUrl": "https://external-preview.redd.it/8tzhlm5SjyNHfn7V3nZ4S7iWB1kKqXO9jjifoIo2Gjc.jpg?auto=webp&s=97c8341b5cec5f9492964c813db1c4e0bac2c494"
+  },
+  {
+    "id": "12",
+    "name": "The Gorn",
+    "affiliation": "Lone Wolf",
+    "origin": "Unknown",
+    "race": "Gornish",
+    "imageUrl": "https://scvhistory.com/gif/startrek_gorndefeat.jpg"
+  },
+  {
+    "id": "13",
+    "name": "Nomad",
+    "affiliation": "none",
+    "origin": "Earth",
+    "race": "Machine",
+    "imageUrl": "https://i.pinimg.com/originals/51/24/ca/5124caeee8093b134d9635a375343a1e.jpg"
+  },
+  {
+    "id": "14",
+    "name": "T'Pring",
+    "affiliation": "Stonn",
+    "origin": "Vulcan",
+    "race": "Vulcan",
+    "imageUrl": "https://img.playbuzz.com/image/upload/q_auto:good,f_auto,fl_lossy,w_640,c_limit,dpr_2.5/v1551476023/qv2tjpwtujbbtm2xsgnq.png"
+  }
+]
