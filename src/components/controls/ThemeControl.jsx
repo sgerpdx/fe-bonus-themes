@@ -1,5 +1,6 @@
 import React from 'react';
 import { useThemeChange } from '../../state/ThemeProvider';
+import PropTypes from 'prop-types';
 
 export default function ThemeControl() {
   const handleThemeChange = useThemeChange();
@@ -19,3 +20,7 @@ export default function ThemeControl() {
     </section>
   );
 }
+
+ThemeControl.PropTypes = {
+  theme: PropTypes.string.isRequired,
+};

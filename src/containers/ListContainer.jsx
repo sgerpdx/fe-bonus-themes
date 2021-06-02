@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import CharacterList from '../components/characters/CharacterList';
 import getCharacters from '../services/API';
-import styles from '../components/app/App.css';
 
 export default function ListContainer() {
   const [loading, setLoading] = useState(true);

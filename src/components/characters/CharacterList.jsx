@@ -2,6 +2,7 @@ import React from 'react';
 import CharacterDetail from './CharacterDetail';
 import styles from '../app/App.css';
 import { useTheme } from '../../state/ThemeProvider';
+import PropTypes from 'prop-types';
 
 export default function CharacterList({ characters }) {
   const theme = useTheme();
@@ -25,3 +26,15 @@ export default function CharacterList({ characters }) {
     </section>
   );
 }
+
+CharacterList.propTypes = {
+  characters: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      race: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+      faction: PropTypes.string.isRequired,
+      id: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};

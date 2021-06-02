@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function CharacterDetail({ name, race, image, faction }) {
   return (
@@ -15,3 +16,10 @@ export default function CharacterDetail({ name, race, image, faction }) {
     </div>
   );
 }
+
+CharacterDetail.propTypes = {
+  name: PropTypes.string.isRequired,
+  race: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  faction: PropTypes.string.isRequired,
+};

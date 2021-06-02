@@ -18,8 +18,5 @@ describe('header container component', () => {
       'Use the menu below to select a visual theme:'
     );
     expect(controlInstructions).toMatchSnapshot();
-
-    // const themeToggle = await screen.getByText('space');
-    // expect(themeToggle).toMatchSnapshot();
   });
 });
