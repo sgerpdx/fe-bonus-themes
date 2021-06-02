@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function CharacterDetail({ name, race, image, faction, id }) {
+export default function CharacterDetail({ name, race, image, faction }) {
   return (
     <div>
       <figure>

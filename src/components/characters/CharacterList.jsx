@@ -1,8 +1,10 @@
 import React from 'react';
 import CharacterDetail from './CharacterDetail';
 import styles from '../app/App.css';
+import { useTheme } from '../../state/ThemeProvider';
 
-export default function CharacterList({ theme, characters }) {
+export default function CharacterList({ characters }) {
+  const theme = useTheme();
   return (
     <section
       className={`${

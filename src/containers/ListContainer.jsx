@@ -3,7 +3,7 @@ import CharacterList from '../components/characters/CharacterList';
 import getCharacters from '../services/API';
 import styles from '../components/app/App.css';
 
-export default function ListContainer({ theme }) {
+export default function ListContainer() {
   const [loading, setLoading] = useState(true);
   const [charList, setCharList] = useState([]);
 
@@ -17,7 +17,7 @@ export default function ListContainer({ theme }) {
 
   return (
     <>
-      <CharacterList theme={theme} characters={charList} />
+      <CharacterList characters={charList} />
     </>
   );
 }

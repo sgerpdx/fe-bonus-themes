@@ -4,17 +4,17 @@ import ListContainer from '../../containers/ListContainer';
 import Header from '../../containers/Header';
 
 export default function App() {
-  const [theme, setTheme] = useState('space');
+  // const [theme, setTheme] = useState('space');
 
-  const handleThemeChange = (e) => {
-    setTheme((theme) => (theme = e.target.value));
-  };
+  // const handleThemeChange = (e) => {
+  //   setTheme((theme) => (theme = e.target.value));
+  // };
 
   return (
     <>
       <h1>Space: The Final Frontier...</h1>
-      <Header onSelect={handleThemeChange} />
-      <ListContainer theme={theme} />
+      <Header />
+      <ListContainer />
     </>
   );
 }

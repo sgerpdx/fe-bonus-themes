@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import ListContainer from './ListContainer';
 //import { rest } from 'msw';
 //import { setupServer } from 'msw';
@@ -22,9 +22,11 @@ describe('list container component', () => {
       </h2>
     `);
 
-    const starTrekList = await screen.findByRole('list', {
-      name: 'Character Grid',
+    return waitFor(async () => {
+      const starTrekList = await screen.findByRole('list', {
+        name: 'Character Grid',
+      });
+      expect(starTrekList).not.toBeEmptyDOMElement();
     });
-    expect(starTrekList).not.toBeEmptyDOMElement();
   });
 });
