@@ -4,15 +4,20 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import Header from './Header';
+import ThemeProvider from '../state/ThemeProvider';
 
 describe('header container component', () => {
   it('displays a heading and a drop-down selection menu', async () => {
-    render(<Header />);
+    render(
+      <ThemeProvider>
+        <Header />
+      </ThemeProvider>
+    );
 
-    const pageTitle = await screen.getByText(
+    const controlInstructions = await screen.getByText(
       'Use the menu below to select a visual theme:'
     );
-    expect(pageTitle).toMatchSnapshot();
+    expect(controlInstructions).toMatchSnapshot();
 
     // const themeToggle = await screen.getByText('space');
     // expect(themeToggle).toMatchSnapshot();

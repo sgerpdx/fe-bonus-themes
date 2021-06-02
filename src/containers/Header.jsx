@@ -5,6 +5,7 @@ import { useTheme } from '../state/ThemeProvider';
 
 export default function Header() {
   const theme = useTheme();
+  console.log('///THEME:', theme);
   return (
     <div
       className={`${

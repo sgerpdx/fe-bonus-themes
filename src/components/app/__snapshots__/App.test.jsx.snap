@@ -3,34 +3,44 @@
 exports[`App component renders App 1`] = `
 <DocumentFragment>
   <h1>
-    Space: The Final Frontier...
+    Starfleet API Databank
   </h1>
-  <div>
-    <div>
-      <h4>
-        Use the menu below to select a visual theme:
-      </h4>
-      <select
-        id="themes"
-        name="themes"
-      >
-        <option
-          value="space"
+  <div
+    class="headerThemeSpace"
+  >
+    <section>
+      <div>
+        <h4>
+          Use the menu below to select a visual theme:
+        </h4>
+        <select
+          id="themes"
+          name="themes"
         >
-          Space
-        </option>
-        <option
-          value="earth"
-        >
-          Earth
-        </option>
-        <option
-          value="vulcan"
-        >
-          Vulcan
-        </option>
-      </select>
-    </div>
+          <option
+            value="space"
+          >
+            Space
+          </option>
+          <option
+            value="earth"
+          >
+            Earth
+          </option>
+          <option
+            value="vulcan"
+          >
+            Vulcan
+          </option>
+        </select>
+      </div>
+      <figure>
+        <img
+          height="40px"
+          src="https://i.stack.imgur.com/mVOSg.gif"
+        />
+      </figure>
+    </section>
   </div>
   <h2>
     Loading...
