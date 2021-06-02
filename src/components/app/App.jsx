@@ -12,7 +12,7 @@ export default function App() {
 
   return (
     <>
-      <h1>Space: The Final Frontier...</h1>
+      <h1>Starfleet API Databank</h1>
       <Header />
       <ListContainer />
     </>
