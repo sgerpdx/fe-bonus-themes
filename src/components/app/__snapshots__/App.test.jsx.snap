@@ -2,17 +2,14 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <h2>
-    Loading...
-  </h2>
+  <h1>
+    Space: The Final Frontier...
+  </h1>
   <div>
-    <h2>
-      Header
-    </h2>
     <div>
-      <h2>
-        Control Console Helm Tactical Display
-      </h2>
+      <h4>
+        Use the menu below to select a visual theme:
+      </h4>
       <select
         id="themes"
         name="themes"
@@ -35,8 +32,8 @@ exports[`App component renders App 1`] = `
       </select>
     </div>
   </div>
-  <h1>
-    Hello World
-  </h1>
+  <h2>
+    Loading...
+  </h2>
 </DocumentFragment>
 `;

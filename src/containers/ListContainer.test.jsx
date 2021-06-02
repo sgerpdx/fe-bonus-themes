@@ -21,5 +21,10 @@ describe('list container component', () => {
         Loading...
       </h2>
     `);
+
+    const starTrekList = await screen.findByRole('list', {
+      name: 'Character Grid',
+    });
+    expect(starTrekList).not.toBeEmptyDOMElement();
   });
 });
