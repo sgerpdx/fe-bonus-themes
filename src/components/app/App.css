@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.displayArea {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.characterGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

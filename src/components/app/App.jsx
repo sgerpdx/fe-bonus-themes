@@ -12,9 +12,9 @@ export default function App() {
 
   return (
     <>
-      <ListContainer theme={theme} />
+      <h1>Space: The Final Frontier...</h1>
       <Header onSelect={handleThemeChange} />
-      <h1>Hello World</h1>
+      <ListContainer theme={theme} />
     </>
   );
 }

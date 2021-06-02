@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import CharacterList from '../components/characters/CharacterList';
 import getCharacters from '../services/API';
+import styles from '../components/app/App.css';
 
 export default function ListContainer({ theme }) {
   const [loading, setLoading] = useState(true);
@@ -15,9 +16,8 @@ export default function ListContainer({ theme }) {
   if (loading) return <h2>Loading...</h2>;
 
   return (
-    <div>
-      <h4>Container</h4>
+    <section className={styles.container}>
       <CharacterList theme={theme} characters={charList} />
-    </div>
+    </section>
   );
 }

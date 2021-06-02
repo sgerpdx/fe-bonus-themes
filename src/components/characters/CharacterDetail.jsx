@@ -3,13 +3,12 @@ import React from 'react';
 export default function CharacterDetail({ name, race, image, faction, id }) {
   return (
     <div>
-      <p>Character Detail</p>
       <figure>
-        <img src={image} height="60" alt={name} />
+        <img src={image} height="120" alt={name} />
         <figcaption>
           <p>{name}</p>
           <p>
-            {race} of {faction}
+            {race}, {faction || 'no known affiliation'}
           </p>
         </figcaption>
       </figure>
