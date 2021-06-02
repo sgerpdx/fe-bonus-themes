@@ -4,7 +4,15 @@ import styles from '../app/App.css';
 
 export default function CharacterList({ theme, characters }) {
   return (
-    <section className={styles.displayArea}>
+    <section
+      className={`${
+        theme === 'earth'
+          ? styles.displayAreaEarth
+          : theme === 'vulcan'
+          ? styles.displayAreaVulcan
+          : styles.displayAreaSpace
+      }`}
+    >
       <ul aria-label="Character Grid" className={styles.characterGrid}>
         {characters.map((character) => (
           <li key={character.id}>

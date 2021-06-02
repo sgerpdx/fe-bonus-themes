@@ -16,8 +16,8 @@ export default function ListContainer({ theme }) {
   if (loading) return <h2>Loading...</h2>;
 
   return (
-    <section className={styles.container}>
+    <>
       <CharacterList theme={theme} characters={charList} />
-    </section>
+    </>
   );
 }

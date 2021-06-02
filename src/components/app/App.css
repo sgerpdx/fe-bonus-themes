@@ -16,6 +16,30 @@ body {
   flex-wrap: wrap;
 }
 
+.displayAreaVulcan {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: blanchedalmond;
+  color: maroon;
+}
+
+.displayAreaSpace {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white;
+}
+
+.displayAreaEarth {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: lightblue;
+  color: rgb(141, 107, 20);
+}
+
 .characterGrid {
   display: flex;
   flex-direction: row;
